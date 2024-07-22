@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CO2 Emissions Analysis</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript Libraries: d3 library and d3-annotation library (using CDN) -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
+
+    <!-- CSS icons and fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap">
+</head>
+
+<body>
+    <h2>Further Exploration</h2>
+    <p>
+        Based on the previous scenes, we can conclude that ....
+    </p>
+    <p>
+        Continue to explore the data below:
+    </p>
+
+    <p class="instruction"><i class="fas fa-mouse"></i> Select the y-axis variable you want to explore: Carbon Dioxide Emissions or the Emissions by Fuel.</p>
+    <p class="instruction"><i class="fas fa-mouse"></i> Select the x-axis variable you want to explore: Population, Median Family Income, or Number of Vehicles.</p>
+    <p class="instruction"><i class="fas fa-mouse"></i> Select and filter the datapoints by region.</p>
+    <p class="instruction"><i class="fas fa-mouse"></i> Mouseover the data points to view the <b>Carbon Dioxide Emissions</b> and the <b>Vehicle Registration Counts</b> values.</p>
+
+    <div id="scatterplot"></div>
+
+    <div class="button-container">
+        <button onclick="location.href='scene3.html'">
+            <span class="span-mother">
+                <span>P</span>
+                <span>r</span>
+                <span>e</span>
+                <span>v</span>
+                <span>i</span>
+                <span>o</span>
+                <span>u</span>
+                <span>s</span>
+            </span>
+            <span class="span-mother2">
+                <span>P</span>
+                <span>r</span>
+                <span>e</span>
+                <span>v</span>
+                <span>i</span>
+                <span>o</span>
+                <span>u</span>
+                <span>s</span>
+            </span>
+        </button>
+        <button onclick="location.href='index.html'">
+            <span class="span-mother">
+                <span>1</span>
+                <span>s</span>
+                <span>t</span>
+                <span>&nbsp</span>
+                <span>P</span>
+                <span>a</span>
+                <span>g</span>
+                <span>e</span>
+            </span>
+            <span class="span-mother2">
+                <span>1</span>
+                <span>s</span>
+                <span>t</span>
+                <span>&nbsp</span>
+                <span>P</span>
+                <span>a</span>
+                <span>g</span>
+                <span>e</span>
+            </span>
+        </button>
+    </div>
+
+    <script src="js/script4.js"></script>
+</body>
+
+</html>
