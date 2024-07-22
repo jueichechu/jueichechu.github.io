@@ -1,21 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CO2 Emission Analysis</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://d3js.org/d3.v6.min.js"></script>
-    <script src="https://d3-annotation.susielu.com/d3-annotation.min.js"></script>
-    <script src="https://d3js.org/topojson.v2.min.js"></script>
-</head>
-<body>
-    <h1>How does the population, median family income, and transportation affect the CO<sub>2</sub> emission?</h1>
 
-    <div id="scatterplot"></div>
+    <head>
+        <meta charset="UTF-8">
+        <title>CO2 Emissions Analysis</title>
+        <link rel="stylesheet" href="style.css">
 
-    <button onclick="location.href='scene2.html'">Next</button>
+        <!-- JavaScript Libraries: d3 library and d3-annotation library (using CDN) -->
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
 
-    <script src="script.js"></script>
-</body>
+        <!-- CSS icons and fonts-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap">
+    </head>
+
+    <body>
+        <h1>Analyzing Factors Influencing Carbon Dioxide Emissions: A State-by-State Examination of Population, Income, and Transportation Impact</h1>
+        <p>
+            This narrative visualization aims to demonstrate the relationship between Carbon Dioxide emissions and key socioeconomic 
+            factors across different states in the US. 
+        </p>
+        <p>
+            By examining the correlations between CO2 emissions and state population, median family income, 
+            and the number of registered automobiles, we seek to uncover the underlying dynamics that contribute to state-level variations in emissions. 
+            The goal is to provide insights that can inform policy decisions and promote more sustainable practices.
+        </p>
+        <h2>Carbon Dioxide Emissions vs. State Population</h2>
+        <p>
+            The scatterplot unveils a compelling narrative about the interplay between state population and carbon dioxide emissions across 
+            the United States. As we journey through the data, a clear pattern emerges: states with larger populations, such as California, exhibit 
+            significantly higher emissions, underscoring the profound impact of human activity on environmental health. This visualization not only 
+            highlights the challenges faced by populous states but also emphasizes the urgent need for targeted policies to manage emissions effectively. 
+            By examining the scatterplot, we gain deeper insights into the demographic and regional factors driving CO2 emissions, paving the way for 
+            informed and strategic environmental interventions.
+        </p>
+        <ul class="bullet-points">
+            <li><i class="fas fa-comment"></i> California stands out as the highest emitter, reflecting the significant impact of its large population on emissions.</li>
+            <li><i class="fas fa-comment"></i> Illinois represents a medium-sized population with substantial emissions, highlighting that even states with moderate populations contribute significantly to overall emissions.</li>
+            <li><i class="fas fa-comment"></i> Massachusetts, with a smaller population, shows lower emissions but still plays a notable role in the aggregate emissions landscape.</li>
+        </ul>
+        <br>
+
+        <p class="instruction"><i class="fas fa-mouse"></i> Mouseover the data points to view the <b>Carbon Dioxide Emissions</b> and the <b>State Population</b> values.</p>
+
+        <div id="scatterplot"></div>
+
+        <button onclick="location.href='scene2.html'">
+            <span class="span-mother">
+                <span>N</span>
+                <span>e</span>
+                <span>x</span>
+                <span>t</span>
+            </span>
+            <span class="span-mother2">
+                <span>N</span>
+                <span>e</span>
+                <span>x</span>
+                <span>t</span>
+            </span>
+        </button>
+        <script src="script.js"></script>
+    </body>
+
 </html>
