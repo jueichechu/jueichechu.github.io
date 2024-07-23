@@ -296,3 +296,36 @@ button .span-mother2 span:nth-child(8) {
     background-color: #fff;
     font-weight: 600;
 }
+
+blockquote {
+    background: #f9f9f9;
+    text-align: justify;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+    max-width: 60%;
+    margin: 1.5em auto;
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 3em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
+}
+
+@media (max-width: 600px) {
+    blockquote {
+        font-size: 1.2em;
+    }
+}
