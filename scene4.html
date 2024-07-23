@@ -18,16 +18,54 @@
 <body>
     <h2>Further Exploration</h2>
     <p>
-        Based on the previous scenes, we can conclude that ....
+        Based on the previous scenes, we can conclude that median family income is not a good indicator of carbon dioxide emissions, but population and number of registered vehicles
+        are shown to have positive relationship with carbon dioxide emissions.
     </p>
+    <br>
     <p>
         Continue to explore the data below:
     </p>
 
-    <p class="instruction"><i class="fas fa-mouse"></i> Select the y-axis variable you want to explore: Carbon Dioxide Emissions or the Emissions by Fuel.</p>
-    <p class="instruction"><i class="fas fa-mouse"></i> Select the x-axis variable you want to explore: Population, Median Family Income, or Number of Vehicles.</p>
-    <p class="instruction"><i class="fas fa-mouse"></i> Select and filter the datapoints by region.</p>
-    <p class="instruction"><i class="fas fa-mouse"></i> Mouseover the data points to view the <b>Carbon Dioxide Emissions</b> and the <b>Vehicle Registration Counts</b> values.</p>
+    <p class="instruction"><i class="fas fa-mouse"></i> Mouseover the data points to view the values of the variables.</p>
+
+    <p class="instruction"><i class="fas fa-mouse"></i> Select from the legend to <u><b>filter</b></u> the datapoints by region.</p>
+
+    <p class="instruction"><i class="fas fa-mouse"></i> Select the <u><b>y-axis variable</b></u> you want to explore: Carbon Dioxide Emissions or Emissions by Fuel Type.</p>
+
+    <div class="radio-inputs">
+        <label class="radio">
+            <input type="radio" name="y-axis-radio" value="Carbon Dioxide Emissions (Million Metric Tons)" checked="">
+            <span class="name">Carbon Dioxide Emissions</span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="y-axis-radio" value="Coal (MMT)">
+            <span class="name">Coal</span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="y-axis-radio" value="Petroleum (MMT)">
+            <span class="name">Petroleum</span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="y-axis-radio" value="Natural Gas (MMT)">
+            <span class="name">Natural Gas</span>
+        </label>
+    </div>
+
+    <p class="instruction"><i class="fas fa-mouse"></i> Select the <u><b>x-axis variable</b></u> you want to explore: Population, Median Family Income, or Number of Vehicles.</p>
+    <div class="radio-inputs-x-axis">
+        <label class="radio-x">
+            <input type="radio" name="x-axis-radio" value="State Population" checked="">
+            <span class="name">Population</span>
+        </label>
+        <label class="radio-x">
+            <input type="radio" name="x-axis-radio" value="Median Family Income (U.S. Dollars)">
+            <span class="name">Income</span>
+        </label>
+        <label class="radio-x">
+            <input type="radio" name="x-axis-radio" value="Vehicle Registration Counts">
+            <span class="name">Vehicles</span>
+        </label>
+    </div>
 
     <div id="scatterplot"></div>
 
@@ -50,7 +88,6 @@
                 <span>v</span>
                 <span>i</span>
                 <span>o</span>
-                <span>u</span>
                 <span>s</span>
             </span>
         </button>

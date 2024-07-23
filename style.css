@@ -74,9 +74,9 @@ p {
     margin: 0 auto;
     width: 100%;
     max-width: 1000px;
-    background: white; /* Set background color to white */
-    padding: 12px ; /* Adjust padding to remove box shadow effect */
-    box-shadow: none; /* Remove the box shadow */
+    background: white;
+    padding: 12px ;
+    box-shadow: none;
 }
 
 .button-container {
@@ -215,4 +215,84 @@ button .span-mother2 span:nth-child(8) {
 .legend rect {
     stroke-width: 2;
     stroke: white;
+}
+
+.radio-inputs {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #EEE;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 550px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+  
+.radio-inputs .radio:first-child {
+    width: 35%; 
+}
+  
+.radio-inputs .radio:not(:first-child) {
+    width: 21.6%; 
+}
+.radio-inputs .radio input {
+    display: none;
+}
+  
+.radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+}
+  
+.radio-inputs .radio input:checked + .name {
+    background-color: #fff;
+    font-weight: 600;
+}
+
+
+.radio-inputs-x-axis {
+    position: relative;
+    display: flex;
+    border-radius: 0.5rem;
+    background-color: #EEE;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 450px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+  
+.radio-inputs-x-axis .radio-x {
+    width: 33%; 
+}
+.radio-inputs-x-axis .radio-x input {
+    display: none;
+}
+  
+.radio-inputs-x-axis .radio-x .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+}
+  
+.radio-inputs-x-axis .radio-x input:checked + .name {
+    background-color: #fff;
+    font-weight: 600;
 }
