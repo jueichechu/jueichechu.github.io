@@ -1,1 +1,3 @@
-# jueichechu.github.io
+# Narrative Visualization
+
+Narrative visualization showcasing the relationship between Carbon Dioxide emissions and key socioeconomic factors across different US states. Developed using d3.js, this interactive visualization provides insights into how variables like income, population, and industrial activity correlate with environmental impact, facilitating a deeper understanding of regional differences and trends.
